@@ -61,8 +61,6 @@ body{
 	border:1px solid rgb(220,255,220);
 	background-color:rgb(250,250,250);
 	padding:10px;
-	
-	margin-left: 630px;
 	margin-right:630px;
 	margin-top:-10px;
 	margin-bottom:50px;
@@ -116,7 +114,7 @@ body{
 
 <script >
 function login(){
-	window.open("login.php","_self");
+	window.open("student_login.php","_self");
 }
 </script>
 <div id="log">
