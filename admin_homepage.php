@@ -171,7 +171,7 @@ aria-label="Search" >
                 
                 <hr style="color:grey;width:65%;">
                 
-                <p style="text-align: center;color:#959595;font-size:20px;"><img src="all_students3.jpg" height=25px style="  vertical-align: text-bottom;"> ALL STUDENTS</p>
+                <p style="text-align: center;color:#959595;font-size:20px;"><img src="all_students3.png" height=25px style="  vertical-align: text-bottom;"> ALL STUDENTS</p>
                 '
                 <table >  
                      
