@@ -177,7 +177,7 @@ aria-label="Search" >
                      
                 <?php  
                 session_start();
-                $con = mysqli_connect("https://www.db4free.net/phpMyAdmin", "aashishraj", "neopassword");  
+                $con = mysqli_connect("db4free.net", "aashishraj", "neopassword");  
                     if(!$con)
 	                {die('could not connectr'.mysqli_error($con));}
                     mysqli_select_db($con,"trackit_student");
