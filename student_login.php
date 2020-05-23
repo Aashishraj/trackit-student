@@ -28,7 +28,7 @@ body{
 	padding-bottom:3px;
 	border:1px solid rgb(0,0,0);
 	border-radius:20px;
-	margin-left:120px;
+	margin-left:45%;
 	color:rgb(100,100,100);
 	font-size:15px;
 
@@ -59,8 +59,8 @@ body{
 	background-color:rgb(250,250,250);
 	padding:10px;
 	border-radius:10px;
-	margin-left: 630px;
-	margin-right:630px;
+	margin-left: 40%;
+	margin-right:40%;
 	margin-top:20px;
 	margin-bottom:50px;
 	border-width:thick;
@@ -69,9 +69,10 @@ body{
 #signin{
 	color:rgb(10,200,10);
 	background-color:rgb(250,250,250);
-	border:1px solid rgb(250,250,250);
-	margin:auto;
+	border:1px solid rgb(240,240,240);
+	margin-left:3%;
 }
+
 
 
 </style>
