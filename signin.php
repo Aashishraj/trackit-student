@@ -31,7 +31,8 @@ body{
 	padding:2px 30px;
 	border:1px solid rgb(0,0,0);
 	border-radius:20px;
-	margin-left:140px;
+	
+	margin-left:50%;
 	color:rgb(100,100,100);
 	font-size:15px;
 }
@@ -55,13 +56,15 @@ body{
 	margin-top:20px;
 	margin-bottom:50px;
 	margin-right:270px;
-	padding-bottom:80px;
+	
 }
 #log{
 	border:1px solid rgb(220,255,220);
 	background-color:rgb(250,250,250);
 	padding:10px;
-	margin-right:630px;
+	
+	margin-left: 40%;
+	margin-right:42%;
 	margin-top:-10px;
 	margin-bottom:50px;
 	border-width:thick;
@@ -70,8 +73,9 @@ body{
 #login{
 	color:rgb(10,200,10);
 	background-color:rgb(250,250,250);
-	border:1px solid rgb(250,250,250);
-	margin-left:10px;
+	border:1px solid rgb(240,240,240);
+	padding:2%;
+	margin-left:10%;
 	border-radius:10px;
 }
 </style>
@@ -141,18 +145,18 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-	$con = mysqli_connect("db4free.net", "aashishraj", "neopassword");  
-                    if(!$con)
-	                {die('could not connectr'.mysqli_error($con));}
-                    mysqli_select_db($con,"trackit_student");
-	$sql="INSERT INTO users(uname,email,password,no_post,no_followers,no_following) values('$name','$email','$pass',0,0,0)";
+		$con = mysqli_connect("db4free.net", "aashishraj", "neopassword");  
+		if(!$con)
+		{die('could not connectr'.mysqli_error($con));}
+		mysqli_select_db($con,"trackit_student");
+	$sql="INSERT INTO users(uname,password,Email,no_post,pic) values('$name','$email','$pass',0,'')";
 	if(!mysqli_query($con,$sql)){
 	die('error'.mysqli_error($con));
 	}
 	echo '<script type="text/javascript">';
 			echo 'alert("1 record added")';
 			echo '</script>';
-			$link = "<script>window.open(\"login.php\",\"_self\")</script>";
+			$link = "<script>window.open(\"student_login.php\",\"_self\")</script>";
 			echo $link;
 			
 	
