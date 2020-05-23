@@ -177,10 +177,10 @@ aria-label="Search" >
                      
                 <?php  
                 session_start();
-                $con = mysqli_connect("localhost", "root", "");  
+                $con = mysqli_connect("https://www.db4free.net/phpMyAdmin", "aashishraj", "neopassword");  
                     if(!$con)
 	                {die('could not connectr'.mysqli_error($con));}
-                    mysqli_select_db($con,"track");
+                    mysqli_select_db($con,"trackit_student");
                 $email=$_SESSION['email'];
                 $query = "SELECT * FROM users";  
                 $result = mysqli_query($con, $query);  
