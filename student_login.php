@@ -137,7 +137,7 @@ if(isset($_POST['submit']))
 	}
 	else{
 	session_start();
-	$con = mysqli_connect("db4free.net", "aashishraj", "neopassword");  
+	$con = mysqli_connect("db4free.net", "aashishraj", "hello123");  
                     if(!$con)
 	                {die('could not connectr'.mysqli_error($con));}
                     mysqli_select_db($con,"trackit_student");
