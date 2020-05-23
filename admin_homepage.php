@@ -195,7 +195,7 @@ aria-label="Search" >
                      echo '  
                                <td style="width:10%; padding:0.5%;  margin:10%; white-space:nowrap; border:none; "> 
                                <div class="img-hover-zoom img-hover-zoom--brightness"> 
-                               <div id=myImg height=1% width=2% class="img-thumnail" style="background-color:rgb('.$col.',100,10);" /><h2 align="center">'.$row['uname'].'</h2></div>
+                               <div id=myImg height=1% width=2% class="img-thumnail" style="background-color:rgb('.$col.',100,10);" /><h3 align="center">'.$row['uname'].'</h3></div>
                                    </div>  
                                      
                                </td>  
