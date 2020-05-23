@@ -143,9 +143,10 @@ if(isset($_POST['submit']))
 	}
 	else
 	{
-	$con=mysqli_connect("localhost","root","");
-	if(!$con){die('could not connectr'.mysqli_error($con));}
-	mysqli_select_db($con,"track");
+	$con = mysqli_connect("db4free.net", "aashishraj", "neopassword");  
+                    if(!$con)
+	                {die('could not connectr'.mysqli_error($con));}
+                    mysqli_select_db($con,"trackit_student");
 	$sql="INSERT INTO users(uname,email,password,no_post,no_followers,no_following) values('$name','$email','$pass',0,0,0)";
 	if(!mysqli_query($con,$sql)){
 	die('error'.mysqli_error($con));
