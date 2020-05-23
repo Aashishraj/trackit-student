@@ -149,7 +149,7 @@ if(isset($_POST['submit']))
 		if(!$con)
 		{die('could not connectr'.mysqli_error($con));}
 		mysqli_select_db($con,"trackit_student");
-	$sql="INSERT INTO users(uname,password,Email,no_post,pic) values('$name','$email','$pass',0,'')";
+	$sql="INSERT INTO users(uname,password,Email,no_post,pic) values('$name','$pass','$email',0,'')";
 	if(!mysqli_query($con,$sql)){
 	die('error'.mysqli_error($con));
 	}
