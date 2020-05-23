@@ -156,7 +156,7 @@ if(isset($_POST['submit']))
 
 			$_SESSION['email']=$email;
 			$_SESSION['name']=$row['uname'];
-			$link = "<script>window.open(\"homepage.php\",\"_self\")</script>";
+			$link = "<script>window.open(\"student_homepage.php\",\"_self\")</script>";
 			echo $link;
 		}
 		else{
