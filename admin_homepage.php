@@ -191,7 +191,7 @@ aria-label="Search" >
                     if($i%5==0){
                          echo '<tr>';
                     }
-                    $col=$i*60;
+                    $col=$i*20;
                      echo '  
                                <td style="width:10%; padding:0.5%;  margin:10%; white-space:nowrap; border:none; "> 
                                <div class="img-hover-zoom img-hover-zoom--brightness"> 
