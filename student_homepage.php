@@ -132,7 +132,7 @@
         </div>
 
 
-        <div id="main_content"><iframe src="http://localhost/track/admin_homepage.php" width="500" height="500"></iframe>
+        <div id="main_content"><iframe src="http://localhost/track/camera.html" width="500" height="500"></iframe>
         <br>
         <br>
         <br>
