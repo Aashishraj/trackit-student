@@ -144,30 +144,30 @@ if(isset($_POST['submit']))
 
 
 
-	$query="SELECT * FROM users where email=\"$email\"";
+	$query="SELECT * FROM users WHERE email = $_POST['email'] AND password = $_POST['pass']";
 	$result=mysqli_query($con,$query);
 	echo $query;
 	$r=0;
-	while($row=mysqli_fetch_array($result))
-	{	$r=1;
-		$spass=$row['password'];
+	
+	$row = mysqli_fetch_array($result, MYSQLI_ASSOC);
+	
+	
 		
-		if(strcmp($spass,$pass)==0){
-			
-
-			$_SESSION['email']=$email;
-			$_SESSION['name']=$row['uname'];
-			$link = "<script>window.open(\"student_homepage.php\",\"_self\")</script>";
-			echo $link;
-		}
-		else{
-			echo '<script type="text/javascript">';
-			echo 'alert("password not exists".$result.$spass)';
-			echo '</script>';
-			}
-		
-
+	if(isset($row['email'])) {
+		$r=1;
+		$_SESSION['email']=$email;
+		$_SESSION['name']=$row['uname'];
+		$link = "<script>window.open(\"student_homepage.php\",\"_self\")</script>";
+		echo $link;
 	}
+	else{
+		echo '<script type="text/javascript">';
+		echo 'alert("password not exists".$result.$spass)';
+		echo '</script>';
+		}
+
+
+
 	if($r==0){
 		echo '<script type="text/javascript">';
 			echo 'alert("user do not exists please signin".$result.$spass)';
